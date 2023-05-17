@@ -1,0 +1,29 @@
+.App {
+    background-color: white;
+    display: grid;
+    margin-top: 2rem;
+}
+
+.Container {
+    background-color: lightblue;
+}
+
+.Output {
+
+}
+
+.ZeroButton {
+
+}
+
+.PreviousNumber {
+
+}
+
+.CurrentNumber {
+
+}
+
+.ClearContent {
+
+}
