@@ -1,0 +1,102 @@
+.App {
+    background-color: black;
+    display: grid;
+    margin-top: 2rem;
+}
+
+.Container {
+    /*background-color: lightblue;*/
+}
+
+.Output {
+
+}
+
+.PreviousNumber {
+
+}
+
+.CurrentNumber {
+
+}
+
+.ZeroButton {
+    border-radius: 40%;
+    border: none;
+    padding: 10px 20px;
+    background: orange;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    background: rgba(169, 169, 169, 0.3);
+    width: 100px;
+    height: 50px;
+}
+
+.ClearContent {
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 2em;
+    cursor: pointer;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    background: rgb(169, 169, 169);
+}
+
+.DelButton {
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 2em;
+    cursor: pointer;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    background: rgb(169, 169, 169);
+    width: 110px;
+}
+
+.CalculateButton {
+    border-radius: 50%;
+    border: none;
+    padding: 10px 20px;
+    background: orange;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    width: 60px;
+    height: 60px;
+}
+
+
+.NumberButton {
+    border-radius: 50%;
+    border: none;
+    padding: 10px 20px;
+    background: orange;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    background: rgba(169, 169, 169, 0.3);
+    height: 60px;
+    width: 60px;
+}
+

@@ -1,8 +1,0 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-body {
-    background: rgba(245, 222, 179, 0.4);
-    margin: 0;
-}
