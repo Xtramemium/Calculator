@@ -1,11 +1,17 @@
 .App {
-    background-color: black;
+    margin-top: 60px;
     display: grid;
-    margin-top: 2rem;
+    position: relative;
 }
 
 .Container {
-    /*background-color: lightblue;*/
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    grid-template-columns: repeat(4, 6rem);
 }
 
 .Output {
@@ -34,11 +40,11 @@
     margin: 4px 2px;
     background: rgba(169, 169, 169, 0.3);
     width: 100px;
-    height: 50px;
+    height: 65px;
 }
 
 .ClearContent {
-    border-radius: 5px;
+    border-radius: 50%;
     border: none;
     padding: 10px 20px;
     font-size: 2em;
@@ -49,6 +55,8 @@
     display: inline-block;
     margin: 4px 2px;
     background: rgb(169, 169, 169);
+    width: 60px;
+    height: 60px;
 }
 
 .DelButton {
@@ -86,15 +94,10 @@
 .NumberButton {
     border-radius: 50%;
     border: none;
-    padding: 10px 20px;
     background: orange;
     font-size: 2em;
     cursor: pointer;
     color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
     background: rgba(169, 169, 169, 0.3);
     height: 60px;
     width: 60px;
