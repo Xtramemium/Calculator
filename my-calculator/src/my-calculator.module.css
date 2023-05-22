@@ -1,33 +1,38 @@
 .App {
-    margin-top: 60px;
-    display: grid;
-    position: relative;
+    height: 100%;
 }
 
 .Container {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: grid;
+    margin-top: 2rem;
+    justify-content: center;
     grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
 }
 
 .Output {
-
+    flex-direction: column;
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: .75rem;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .PreviousNumber {
-
+    color: gray;
+    font-size: 1.5rem;
 }
 
 .CurrentNumber {
-
+    color: white;
+    font-size: 2.5rem;
 }
 
 .ZeroButton {
-    border-radius: 40%;
+    border-radius: 50px;
     border: none;
     padding: 10px 20px;
     background: orange;
@@ -37,10 +42,9 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
+    margin: 8px;
     background: rgba(169, 169, 169, 0.3);
-    width: 100px;
-    height: 65px;
+    grid-column: span 2;
 }
 
 .ClearContent {
@@ -53,10 +57,8 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
+    margin: 8px;
     background: rgb(169, 169, 169);
-    width: 60px;
-    height: 60px;
 }
 
 .DelButton {
@@ -69,12 +71,12 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
+    margin: 8px;
     background: rgb(169, 169, 169);
-    width: 110px;
+    grid-column: span 2;
 }
 
-.CalculateButton {
+.OperationButton {
     border-radius: 50%;
     border: none;
     padding: 10px 20px;
@@ -85,9 +87,22 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
-    width: 60px;
-    height: 60px;
+    margin: 8px;
+}
+
+.CalculateButton {
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px;
+    background: orange;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px;
+    grid-column: span 2;
 }
 
 
@@ -99,7 +114,6 @@
     cursor: pointer;
     color: white;
     background: rgba(169, 169, 169, 0.3);
-    height: 60px;
-    width: 60px;
+    margin: 8px;
 }
 
