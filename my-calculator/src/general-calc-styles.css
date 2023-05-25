@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.App {
+    text-align: center;
+}
+
 body {
     background: black;
     margin: 0;
@@ -10,4 +14,59 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.numButtons {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 5rem);
+    grid-template-rows: minmax(7rem, auto) repeat(2, 6rem);
+}
+
+.numberButtons {
+    border-radius: 50%;
+    border: none;
+    background: orange;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    background: rgba(169, 169, 169, 0.3);
+    margin: 8px;
+    width: 70px;
+    height: 70px;
+
+}
+
+.calcButtons {
+    display: grid;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.calculateButtons {
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px;
+    background: orange;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px;
+    width: 70px;
+    height: 70px;
+
+}
+
+.finish {
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    color: white;
 }
