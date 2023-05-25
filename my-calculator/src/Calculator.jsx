@@ -15,11 +15,12 @@ function App() {
     const result = value + operator + value1
 
     const calculatePlus = () => {
-        return  Number(value + value1)
+        return  String(Number(value) + Number(value1))
     }
 
     const calculateMinus = () => {
-        return value - value1
+        return  String(Number(value) - Number(value1))
+
     }
 
 
@@ -43,14 +44,15 @@ function App() {
             setOperator('')
         } else if (op === '=') {
             if (operator === '+') {
-                console.log('Значения:',value, value1)
-                console.log('тип выражения:', typeof calculatePlus())
                 setValue(calculatePlus)
                 setValue1('')
                 setOperator('')
             }
             else if (op === '-') {
-                calculateMinus()
+                setValue(calculateMinus)
+                setValue1('')
+                setOperator('')
+
             }
             setFinish(true)
         } else {
