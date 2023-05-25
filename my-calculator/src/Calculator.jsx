@@ -5,7 +5,7 @@ function App() {
 
     const [butArr, setButArr] = useState(["1", '2', '3', '4', '5', '6', '7', '8', '9'])
 
-    const actions = ['+', '-', 'C', '=']
+    const actions = ['+', '-', '*', 'C', '=']
 
     const [operator, setOperator] = useState('')
     const [value, setValue] = useState('0')
@@ -21,6 +21,10 @@ function App() {
     const calculateMinus = () => {
         return  String(Number(value) - Number(value1))
 
+    }
+
+    const calculateMultiply = () => {
+        return String(Number(value) * Number(value1))
     }
 
 
@@ -52,7 +56,10 @@ function App() {
                 setValue(calculateMinus)
                 setValue1('')
                 setOperator('')
-
+            } else if (operator === '*') {
+                setValue(calculateMultiply)
+                setValue1('')
+                setOperator('')
             }
             setFinish(true)
         } else {
