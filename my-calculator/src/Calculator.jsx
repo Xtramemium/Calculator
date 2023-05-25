@@ -48,7 +48,7 @@ function App() {
                 setValue1('')
                 setOperator('')
             }
-            else if (op === '-') {
+            else if (operator === '-') {
                 setValue(calculateMinus)
                 setValue1('')
                 setOperator('')
